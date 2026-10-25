@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body class="registration-page">
+    <header>
+      <div class="container">
+        <h1>Cort</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="#registration-form">До реєстрації</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="registration-form">
+        <h2>Форма реєстрації</h2>
+        <form>
+          <section class="form-section-personal">
+            <h3>Особисті дані</h3>
+            <label for="user-name"
+              >Ваше ім'я:
+              <input type="text" name="user-name" id="user-name" />
+            </label>
+            <label for="user-number"
+              >Номер телефону:
+              <input type="tel" name="user-number" id="user-number" />
+            </label>
+            <label for="user-email"
+              >Пошта:
+              <input type="email" name="user-email" id="user-email" />
+            </label>
+            <label for="user-password"
+              >Пароль:
+              <input type="password" name="user-password" id="user-password" />
+            </label>
+            <label for="user-date"
+              >Дата народження:
+              <input type="date" name="user-date" id="user-date" />
+            </label>
+            <label for="user-gender"
+              >Стать:
+              <select name="user-gender" id="user-gender">
+                <option value="">Оберіть стать</option>
+                <option value="male">Чоловіча</option>
+                <option value="female">Жіноча</option>
+              </select>
+            </label>
+          </section>
+          <section class="form-section-preferences">
+            <h3>Хобі</h3>
+            <fieldset>
+              <legend>Обреріть Ваші інтереси</legend>
+              <label>
+                <input
+                  name="hobbies"
+                  type="checkbox"
+                  id="user-art"
+                  value="art"
+                />
+                Малювання
+              </label>
+              <label>
+                <input
+                  name="hobbies"
+                  type="checkbox"
+                  id="user-sport"
+                  value="sport"
+                />
+                Спорт
+              </label>
+              <label>
+                <input
+                  name="hobbies"
+                  type="checkbox"
+                  id="user-piano"
+                  value="piano"
+                />
+                Фортепіано
+              </label>
+            </fieldset>
+          </section>
+          <section class="form-section-notifications">
+            <h3>Спосіб отримання повідомлень</h3>
+            <fieldset>
+              <legend>Оберіть зручний для Вас варіант</legend>
+              <input
+                type="radio"
+                id="user-radio1"
+                name="notification-method"
+                value="phone"
+              />
+              <label for="user-radio1">На номер телефону</label>
+              <input
+                type="radio"
+                id="user-radio2"
+                name="notification-method"
+                value="email"
+              />
+              <label for="user-radio2">На пошту</label>
+              <input
+                type="radio"
+                id="user-radio3"
+                name="notification-method"
+                value="website"
+              />
+              <label for="user-radio3">На сайті</label>
+              <input
+                type="radio"
+                id="user-radio4"
+                name="notification-method"
+                value="all-methods"
+              />
+              <label for="user-radio4">Всі способи </label>
+            </fieldset>
+          </section>
+          <section class="form-section-comments">
+            <h3>Додаткові коментарі</h3>
+            <p>
+              <label for="user-comments">Залиште нам коментар</label>
+            </p>
+            <textarea
+              id="user-comments"
+              name="user-comments"
+              cols="70"
+              rows="7"
+            ></textarea>
+          </section>
+          <section class="form-section-actions">
+            <h3>Дії з формою</h3>
+            <p class="consent-option">
+              <label>
+                <input
+                  type="checkbox"
+                  name="consent"
+                  id="user-checkbox"
+                  value="consent"
+                />
+                Я згоден на обробку персональних даних
+              </label>
+            </p>
+            <p class="form-actions">
+              <button name="submit" type="submit">Відправити</button>
+              <button name="reset" type="reset">Очистити</button>
+            </p>
+          </section>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a href="#registration-form">Піднятися вгору</a>
+      <p>&copy; 2026 Cort Guitars. Всі права захищені.</p>
+    </footer>
+  </body>
+</html>

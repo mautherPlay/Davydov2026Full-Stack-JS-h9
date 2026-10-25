@@ -1,0 +1,400 @@
+/* Кольори */
+:root {
+  --color-rosewood: #1a110f;
+  --color-mahogany: #343235;
+  --color-sunburst: #e7cfa3;
+  --color-spruce: #fbddbe;
+  --color-white: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-mahogany);
+  color: var(--color-white);
+  font-family: 'Roboto Slab', serif;
+}
+
+body.registration-page {
+  background-color: var(--color-white);
+  color: var(--color-rosewood);
+}
+
+/* Хідер та навігація */
+header {
+  background-color: var(--color-mahogany);
+  padding: 16px 0;
+}
+
+header h1 {
+  color: var(--color-white);
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+header nav > ul {
+  list-style: none;
+}
+
+header nav li {
+  margin-bottom: 8px;
+}
+
+header nav li:last-child {
+  margin-bottom: 0;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--color-white);
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--color-sunburst);
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: var(--color-spruce);
+}
+
+/* Hero-секція */
+.hero {
+  background-image: url('../images/hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 192px 0;
+}
+
+main section {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding: 16px 0;
+}
+
+main section > .container > :last-child {
+  margin-bottom: 0;
+}
+
+main section h2 {
+  margin-bottom: 16px;
+}
+
+main section h3 {
+  margin-bottom: 12px;
+}
+
+main section p {
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  color: var(--color-white);
+  font-size: 64px;
+}
+
+.hero-subtitle {
+  color: var(--color-white);
+  font-size: 24px;
+}
+
+/* Вступ і картки */
+.under-hero,
+#classic-models,
+#electric-models,
+#bass-models {
+  text-align: center;
+}
+
+#classic-models,
+#bass-models {
+  background-color: var(--color-white);
+}
+
+.under-hero,
+#classic-models,
+#bass-models {
+  color: var(--color-rosewood);
+}
+
+.under-hero {
+  background-color: var(--color-spruce);
+}
+
+#classic-models > h2,
+#electric-models > h2,
+#bass-models > h2 {
+  font-size: 32px;
+}
+
+#classic-models > p,
+#electric-models > p,
+#bass-models > p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#under-hero > h2 + p {
+  font-size: 20px;
+}
+
+#under-hero > h2 ~ p {
+  color: var(--color-mahogany);
+}
+
+.cards {
+  list-style: none;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+#classic-models .cards {
+  background-color: var(--color-spruce);
+  color: var(--color-rosewood);
+}
+
+#bass-models .cards {
+  background-color: var(--color-sunburst);
+  color: var(--color-rosewood);
+}
+
+#electric-models .cards {
+  background-color: var(--color-rosewood);
+  color: var(--color-spruce);
+}
+
+.card {
+  background-color: inherit;
+  color: inherit;
+  text-align: center;
+  margin-bottom: 12px;
+  padding: 16px;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card > img {
+  margin-bottom: 12px;
+}
+
+.card > h3 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+#electric-models {
+  background-color: var(--color-rosewood);
+  color: var(--color-white);
+}
+
+/* Про нас */
+#about-us {
+  text-align: center;
+  background-color: var(--color-rosewood);
+  color: var(--color-white);
+}
+
+#about-us > h2 {
+  color: var(--color-spruce);
+}
+
+#about-us > h2::before {
+  content: '- ';
+}
+
+#about-us article {
+  margin-bottom: 16px;
+}
+
+#about-us article > h3 {
+  color: var(--color-spruce);
+  font-size: 28px;
+  text-align: center;
+}
+
+#about-us article > p {
+  line-height: 1.5;
+}
+
+#about-us article > :last-child {
+  margin-bottom: 0;
+}
+
+#about-us article:last-child {
+  margin-bottom: 0;
+}
+
+#about-us .about-company > p:first-of-type::first-letter,
+#about-us .about-products > p:first-of-type::first-letter,
+#about-us .about-goal > p:first-of-type::first-letter {
+  color: var(--color-sunburst);
+  font-size: 24px;
+}
+button {
+  cursor: pointer;
+}
+
+/* Футер / посилання */
+footer {
+  color: var(--color-white);
+  text-align: center;
+  background-color: var(--color-mahogany);
+  padding: 16px 0;
+}
+
+footer a {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer a:link,
+footer a:visited {
+  color: var(--color-white);
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--color-sunburst);
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* Форма реєстрації */
+#registration-form {
+  text-align: center;
+}
+
+#registration-form > h2 {
+  font-size: 32px;
+}
+
+#registration-form form section > h3 {
+  font-size: 20px;
+}
+
+#registration-form > form {
+  text-align: center;
+}
+
+.form-section-personal {
+  padding: 20px;
+}
+
+.form-section-preferences {
+  padding: 20px 400px 0px;
+}
+.consent-option {
+  padding: 20px 10px;
+}
+.form-section-notifications {
+  padding: 20px 400px;
+}
+
+.form-section-comments {
+  padding: 32px 20px 20px;
+}
+
+.form-section-actions {
+  padding: 16px;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.form-section-personal > label {
+  font-size: 18px;
+}
+
+form input,
+form select,
+form textarea {
+  background-color: var(--color-white);
+  color: var(--color-rosewood);
+}
+
+form input,
+form select {
+  border: 1px solid var(--color-mahogany);
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: 2px solid var(--color-sunburst);
+}
+
+form fieldset {
+  border: 2px solid var(--color-mahogany);
+}
+
+form input:checked {
+  accent-color: var(--color-mahogany);
+}
+
+form textarea {
+  background-color: var(--color-white);
+  color: var(--color-rosewood);
+}
+
+form button[type='submit'] {
+  border: 1px solid var(--color-mahogany);
+  background-color: var(--color-spruce);
+  color: var(--color-rosewood);
+}
+form button[type='reset'] {
+  border: 1px solid var(--color-mahogany);
+  background-color: var(--color-sunburst);
+  color: var(--color-rosewood);
+}
+
+form button:hover,
+form button:focus {
+  background-color: var(--color-sunburst);
+}
+
+/* Цей селектор має найбільшу специфічність — (1, 2, 3). */
+#registration-form form .consent-option > label input:checked {
+  accent-color: var(--color-sunburst);
+}
+
+/* Сторінка таблиць */
+th,
+td {
+  border: 1px solid var(--color-rosewood);
+}
+
+th {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin-inline: auto;
+  margin-bottom: 24px;
+}

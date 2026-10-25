@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таблиці</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Cort</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="form.html">Реєстрація</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <table class="price-table">
+      <caption>
+        Таблиця цін на товари Cort Guitars
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Назва товару</th>
+          <th scope="col">Категорія</th>
+          <th scope="col">Ціна</th>
+          <th scope="col">Кількість</th>
+          <th scope="col">Загальна вартість</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AC120CE</td>
+          <td>Класична гітара</td>
+          <td>5999₴</td>
+          <td>3</td>
+          <td>17997₴</td>
+        </tr>
+        <tr>
+          <td>Storm X1</td>
+          <td>Електрогітара</td>
+          <td>6999₴</td>
+          <td>2</td>
+          <td>13998₴</td>
+        </tr>
+        <tr>
+          <td>Action Plus Black</td>
+          <td>Бас-гітара</td>
+          <td>8999₴</td>
+          <td>1</td>
+          <td>8999₴</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Разом</td>
+          <td colspan="2"></td>
+          <td>6</td>
+          <td>40994₴</td>
+        </tr>
+      </tfoot>
+    </table>
+    <table class="category-table">
+      <caption>
+        Таблиця категорій товарів Cort Guitars
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Категорія</th>
+          <th scope="col">Товар</th>
+          <th scope="col">Кількість</th>
+          <th scope="col">Ціна</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Класичні гітари</td>
+          <td>AC-100SG Semi Gloss</td>
+          <td rowspan="3">8</td>
+          <td rowspan="3">39499₴</td>
+        </tr>
+        <tr>
+          <td>AC120CE</td>
+        </tr>
+        <tr>
+          <td>AC70-OP-W</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Електрогітари</td>
+          <td>Storm X1</td>
+          <td rowspan="3">11</td>
+          <td rowspan="3">81699₴</td>
+        </tr>
+        <tr>
+          <td>Manson</td>
+        </tr>
+        <tr>
+          <td>G110-BKS</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Бас-гітари</td>
+          <td>Action Plus Black</td>
+          <td rowspan="3">7</td>
+          <td rowspan="3">69799₴</td>
+        </tr>
+        <tr>
+          <td>Action PJ OPB</td>
+        </tr>
+        <tr>
+          <td>Action Junior</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="user-results-table">
+      <caption>
+        Таблиця результатів користувачів
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Учасник</th>
+          <th scope="colgroup" colspan="3">Результати</th>
+          <th scope="col">Підсумок</th>
+        </tr>
+        <tr>
+          <th scope="col" rowspan="2">Ім'я</th>
+          <th scope="colgroup" colspan="2">Виконання</th>
+          <th scope="col">Складність композиції</th>
+          <th scope="col" rowspan="2">Бали</th>
+        </tr>
+        <tr>
+          <th scope="col">Техніка</th>
+          <th scope="col">Ритм</th>
+          <th scope="col">Аплікатурність</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Анна</td>
+          <td>29</td>
+          <td>28</td>
+          <td>29</td>
+          <td>86</td>
+        </tr>
+        <tr>
+          <td>Олег</td>
+          <td>31</td>
+          <td>30</td>
+          <td>31</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Марія</td>
+          <td>27</td>
+          <td>26</td>
+          <td>28</td>
+          <td>81</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
