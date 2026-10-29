@@ -35,6 +35,9 @@ body.registration-page {
 header {
   background-color: var(--color-mahogany);
   padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 header h1 {
@@ -45,6 +48,8 @@ header h1 {
 
 header nav > ul {
   list-style: none;
+  display: flex;
+  gap: 12px;
 }
 
 header nav li {
@@ -186,18 +191,28 @@ main section p {
   position: relative;
 }
 
-.card-label {
+.card-number {
+  color: var(--color-rosewood);
   position: absolute;
-  top: 155px;
-  right: 145px;
+  top: 15px;
+  left: 15px;
 }
 
 .card:last-child {
   margin-bottom: 0;
 }
 
-.card > img {
+.card-image {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
   margin-bottom: 12px;
+}
+
+.card-image > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .card > h3 {
@@ -263,7 +278,6 @@ footer {
   text-align: center;
   background-color: var(--color-mahogany);
   padding: 16px 0;
-  position: sticky;
   bottom: 0;
 }
 
@@ -281,7 +295,7 @@ footer p {
 
 footer a:link,
 footer a:visited {
-  color: var(--color-white);
+  color: rgb(0, 183, 255);
 }
 
 footer a:hover,
